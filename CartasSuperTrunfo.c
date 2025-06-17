@@ -36,6 +36,6 @@ main(){
 
     // fgets para nomes compostos
 
-    return 0 \n;
+    return 0;
 
 }
