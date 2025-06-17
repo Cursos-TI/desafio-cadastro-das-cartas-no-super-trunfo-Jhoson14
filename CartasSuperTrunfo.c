@@ -11,7 +11,7 @@ main(){
     int Pop; //População-Não deveria ser float ou algo similar? Resultado será limitado a numeros inteiros, numeros nas casas de milhares e milhões não serão apresentados corretamente
     float Área;
     float PIB;
-    int pontos turisticos
+    int pontos;//turisticos
     //código da cidade, nome, população, área, PIB, número de pontos turísticos
     
     printf("Desafio Super Trunfo - Estados \n");
@@ -30,7 +30,7 @@ main(){
     scanf ("%d", &Pop);
 
     printf ("Quantos pontos turisticos há na cidade? \n);
-        scanf ("%d", &pontos
+        scanf ("%d", &pontos);
 
 //Retorno com dados das cartas
 
