@@ -11,7 +11,7 @@ main(){
     int Pop; //População-Não deveria ser float ou algo similar? Resultado será limitado a numeros inteiros, numeros nas casas de milhares e milhões não serão apresentados corretamente
     float Área;
     float PIB;
-    int pontos;//turisticos
+    int Pontos;//turisticos
     //código da cidade, nome, população, área, PIB, número de pontos turísticos
     
     printf("Desafio Super Trunfo - Estados \n");
@@ -26,23 +26,31 @@ main(){
     printf ("Qual nome da cidade? \n");
     fgets(Cidade, sizeof(Cidade), stdin);
 
-    printf ("Há quantos Habitantes nesta cidade? \n");
+    printf ("Há quantos Habitantes nesta cidade? \n"); //população
     scanf ("%d", &Pop);
 
-    printf ("Quantos pontos turisticos há na cidade? \n);
-        scanf ("%d", &pontos);
+    printf ("Qual a área da cidade? (Em km²) \n");
+    scanf ("%d", &Pontos);
 
-//Retorno com dados das cartas
+    printf ("Qual o valor do Produto Interno Bruto (PIB) da cidade? ");
+    scanf ("%F", &PIB);
 
-    printf ("Carta A01 \n");
+    printf ("Quantos pontos turisticos há na cidade? \n");
+    scanf ("%d", &Pontos);
+   
+    printf ("Carta 01 \n");//Retorno com dados digitado carta 1
     printf("Estado:%s",Estado);
     printf("Cidade:%s",Cidade);
-    printf("Habitantes: %d\n",Pop); //0x para gerar casas decimais e hexadecimais?
+    printf("Habitantes: %d\n",Pop); //gerado em numeros inteiros, devo adicionar milhares?
+    printf ("PIB: %d", &PIB);
+    printf ("Pontos Turisticos: %d", &Pontos);
 
-    printf ("Carta 02 \n");
-    printf("Estado:%s",Estado);
+
+    printf("Estado:%s",Estado); //retono dos dados digitados carta 2
     printf("Cidade:%s",Cidade);
-    printf("Habitantes:%d \n",Pop);
+    printf("Habitantes: %d\n",Pop); //gerado em numeros inteiros, devo adicionar milhares?
+    printf ("PIB: %s \n", &PIB);
+    printf ("Pontos Turisticos: %s \n", &Pontos);
     //retorno para testes, mover para o final após pronto
 
 
